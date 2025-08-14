@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="topics.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+
+    <div class="same">
+
+        <h1 class="hh">Node.js – JavaScript Beyond the Browser</h1>
+
+        <p class="pp">Node.js is a runtime environment that allows JavaScript to be executed outside the web browser,
+            most commonly on servers. Built on Google’s V8 JavaScript engine — the same core that powers Chrome —
+            Node.js takes JavaScript, traditionally limited to client-side scripting, and extends its reach to back-end
+            development. This transformation enables developers to use a single programming language across the entire
+            stack, from browser interfaces to server logic.
+            <br><br>
+            The defining characteristic of Node.js is its non-blocking, event-driven architecture. Unlike traditional
+            server environments that handle each request with a separate thread, Node.js operates on a single thread,
+            using an event loop to process multiple requests concurrently. When a request involves a time-consuming
+            operation, such as reading from a database or fetching data from an API, Node.js delegates the task to the
+            system and continues handling other requests. Once the operation is complete, a callback or promise resumes
+            execution. This model allows Node.js to handle high concurrency with minimal resource usage, making it
+            particularly well-suited for real-time applications.
+            <br><br>
+            Node.js uses JavaScript modules to organize code, with the npm (Node Package Manager) ecosystem providing
+            access to an enormous library of reusable packages. Developers can quickly integrate functionality such as
+            authentication, database connections, and file handling without reinventing common patterns. This ecosystem
+            has become one of the largest collections of open-source software in the world.
+            <br><br>
+            A major advantage of Node.js is its suitability for real-time, data-intensive applications. Use cases
+            include chat servers, multiplayer games, live dashboards, streaming services, and collaborative editing
+            tools — any scenario where rapid, bidirectional communication between client and server is essential. By
+            using WebSockets or similar protocols, Node.js can maintain persistent connections, enabling updates to be
+            pushed instantly rather than polled periodically.
+            <br><br>
+            Node.js does not provide a built-in web server by default, but it makes it simple to create one. Libraries
+            like Express.js have become popular companions, offering tools to route requests, handle middleware, and
+            manage application logic. This combination allows developers to quickly build scalable, maintainable APIs
+            and web applications.
+            <br><br>
+            While Node.js excels at I/O-bound tasks, it is less suited for CPU-intensive operations, such as large-scale
+            data processing, because such tasks can block the event loop. However, with worker threads and clustering,
+            developers can distribute heavy workloads across multiple processes or cores.
+            <br><br>
+            In essence, Node.js redefines what JavaScript can do. By breaking free from the browser and embracing
+            asynchronous, event-driven design, it allows developers to build fast, scalable, and unified applications
+            that use the same language for both client and server. This unification streamlines development, fosters
+            code reuse, and powers many of today’s most demanding web applications.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

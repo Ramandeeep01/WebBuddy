@@ -1,0 +1,154 @@
+/* ===== MOBILE: up to 366px (Oppo A3 5G etc.) ===== */
+@media (max-width: 368px) {
+
+  /* Global safety */
+  html, body { max-width: 100%; overflow-x: hidden; }
+  * { box-sizing: border-box; }
+  img, video, canvas { max-width: 100%; height: auto; display: block; }
+
+  /* NAV / HERO */
+  nav {
+    width: 100%;
+    min-height: 60vh;                   /* be flexible on small screens */
+    padding: 16px 12px;
+    margin-top: 0;
+
+    /* background image behavior */
+    background-size: cover;             /* fill area; switch to 'contain' if you want full image visible */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* remove desktop offsets that cause overflow */
+  #main-heading,
+  .link a,
+  #tag-line,
+  #logo,
+  ul {
+    position: static;   /* kills left/top pushes */
+    left: auto; top: auto;
+    margin: 0;          /* we’ll add mobile spacing below */
+  }
+
+  #main-heading {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+    margin: 8px 0 0;
+    font-size: 16px;
+    list-style: none;
+  }
+
+  .link a {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  /* Tag line block */
+  #tag-line {
+    text-align: center;
+    margin-top: 16px;
+    padding: 0 12px;
+  }
+  #tag-heading { font-size: 22px; }
+  #tag-para   { font-size: 14px; line-height: 1.4; }
+
+  /* Logo card */
+  #logo {
+    width: 100%;
+    max-width: 320px;
+    margin: 16px auto 0;
+    height: auto;
+    padding: 12px;
+    font-size: 24px;
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    text-align: center;
+  }
+  #lg-heading { position: static; top: 0; font-size: 22px; }
+
+  /* Divider */
+  hr { margin: 12px 0; height: 1px; background: black; border: 0; }
+
+  /* Headings */
+  #pillars-heading,
+  #topic-heading,
+  #about-heading,
+  #road-heading {
+    font-size: 24px;
+    text-align: center;
+    padding: 0 12px;
+  }
+
+  /* Paragraphs */
+  .main-para,
+  #about-para {
+    width: 100%;
+    margin: 8px auto;
+    padding: 0 12px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* Pillars section */
+  .pillars-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 0 12px;
+  }
+  .pillar {
+    width: 100%;
+    max-width: 340px;   /* fits inside 366 with padding */
+    height: auto;
+    padding: 12px;
+    text-align: center;
+  }
+  .pillar-heading { font-size: 18px; }
+
+  /* Topics grid */
+  .topics-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 0 12px;
+  }
+  .atag { display: block; width: 100%; text-decoration: none; color: inherit; }
+  .topic {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    padding: 12px;
+  }
+
+  /* Roadmap */
+  .steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 0 12px;
+  }
+  .step {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer { text-align: center; padding: 12px; }
+  #back-btn { font-size: 14px; padding: 8px 12px; }
+}

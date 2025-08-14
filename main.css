@@ -1,0 +1,114 @@
+/* pillars */
+
+#pillars-heading {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+.main-para {
+    width: 1000px;
+    text-align: center;
+    margin-left: 180px;
+    color: gray;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: black;
+    margin: 20px 0;
+}
+
+.pillars-div {
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+}
+
+.pillar {
+    height: 370px;
+    width: 460px;
+    background-color: #f9fbff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.3);
+}
+
+.pillar-heading {
+    font-size: 30px;
+}
+
+/* topics */
+
+#topic-heading {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+.topics-div {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.topic {
+    height: 150px;
+    width: 270px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.3);
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.topic:hover {
+    transform: scale(1.1);
+}
+
+/* about us */
+
+#about-heading {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+#about-para {
+    width: 1100px;
+    margin-left: 140px;
+    color: #fff;
+}
+
+/* road-map */
+
+#road-heading {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.step {
+    height: 160px;
+    width: 550px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.3);
+}
